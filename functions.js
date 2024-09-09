@@ -66,3 +66,28 @@ function createWaveEffect(element) {
 
 // Aplicar o efeito a todos as img, e i
 document.querySelectorAll('img, i').forEach(createWaveEffect);
+
+// Função para adicionar a classe 'visible' com um atraso para criar o efeito de cascata
+function animateOnScroll(entries, observer) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const cards = entry.target.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('visible');
+                }, index * 200); // Atraso de 200ms multiplicado pelo índice para o efeito de cascata
+            });
+            observer.unobserve(entry.target); // Parar de observar a seção após animar
+        }
+    });
+}
+
+// Configuração do IntersectionObserver
+let observer = new IntersectionObserver(animateOnScroll, {
+    threshold: 0.1 // Quando 10% da seção estiver visível
+});
+
+// Observar cada seção
+document.querySelectorAll('section').forEach(section => {
+    observer.observe(section);
+});
