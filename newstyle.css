@@ -76,12 +76,14 @@ header img {
     margin-top: 20px;
     font-size: 1.5rem;
     color: #656565;    
+    z-index: 4;
 }
 
 .section h2 {
     padding: 5px;
     font-size: 1.3rem;
     color: #656565;
+    z-index: 4;
 }
 
 .section h3 {
@@ -99,20 +101,20 @@ header img {
 
 /* section 1 */
 
-#section1 p {
+#home p {
     margin: 20px 0px;
     padding: 5px;
 }
 
-#section1 figure {
+#home figure {
     margin: -60px;
 }
 
-#section1 img {
+#home img {
     width: 300px;
 }
 
-#section1 button {
+#home button {
     min-width: 100px;
     padding: 15px 20px;
     margin-top: 10px;
@@ -125,7 +127,7 @@ header img {
     font-weight: 600;
 }
 
-#section1 button:hover {
+#home button:hover {
     box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -139,7 +141,7 @@ header img {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-#section2 .card {
+#sites .card {
     background-color: #ffffff50;
 }
 
@@ -148,15 +150,15 @@ header img {
     padding: 0px 5px;
 }
 
-#section2 h2, h3 {
+#sites h2, h3 {
     margin-top: 15px;
 }
 
-#section2 p {
+#sites p {
     padding: 10px;
 }
 
-#section2 i {
+#sites i {
     padding: 15px 20px;
     margin-top: 15px;
     color: rgb(255, 255, 255);
@@ -165,51 +167,51 @@ header img {
     background-image: linear-gradient(to top, #566a00, #6c8a0a, #83ab19, #98ce28, #acf238);
 }
 
-#section2 .divCardsTools img {
+#sites .divCardsTools img {
     width: 70px;
 }
 
 /* section 3 */
 
-#section3 h1 {
+#marketing h1 {
     font-size: 1.3rem;
 }
 
-#section3 h2 {
+#marketing h2 {
     margin-top: 15px;
 }
 
-#section3 p {
+#marketing p {
     padding: 10px;
 }
 
 
-#section3 .card img {
+#marketing .card img {
     width: 250px;
 }
 
-#section3 .cardMarketing {
+#marketing .cardMarketing {
     background-color: rgba(255, 255, 255, 0);
     box-shadow: none;
 }
 
 /* section 4 */
 
-#section4 form {
+#contato form {
     padding: 15px;
 }
 
-#section4 h2 {
+#contato h2 {
     margin-top: 15px;
 }
 
-#section4 label {
+#contato label {
     color: #737373;
     padding: 10px;
     display: block;
 }
 
-#section4 input[type="text"], input[type="email"], textarea {
+#contato input[type="text"], input[type="email"], textarea {
     font-family: "Poppins", sans-serif;
     padding: 10px;
     border-radius: 5px;
@@ -293,11 +295,11 @@ header img {
 
     /* section 1 */
 
-    #section1 figure {
+    #home figure {
         padding: 100px;
     }
 
-    #section1 h1 {
+    #home h1 {
         margin: 0;
         padding: 0;
         color: #ffffff7a;
@@ -305,22 +307,27 @@ header img {
 
     }
 
-    #section1 img {
-        width: 350px;
+    #home h2 {
+        color: #ffffffa0;
+        text-shadow: 1px 1px 1px rgb(41, 41, 41);
+    }
+
+    #home img {
+        width: 300px;
         border-radius: 50%;
-        margin-top: -15px;
-        background-image: linear-gradient(to top, #566a00, #6c8a0a, #83ab19, #98ce28, #acf238);
+        margin-top: -5px;
         box-shadow: 0 15px 15px -8px rgba(109, 109, 109, 0.507);
+        background-image: linear-gradient(to top, #f9ffee, #f0fcd7, #e7f9bf, #e0f6a6, #d8f28d, #d0ed7c, #c9e96a, #c1e458, #b7dd4a, #acd63c, #a1d02c, #96c917);
     }
 
     /* section 2 */
 
-    #section2 .divCards {
+    #sites .divCards {
         display: flex;
         padding: 5px;
     }
 
-    #section2 .divCardsTools {
+    #sites .divCardsTools {
         display: flex;
         flex-wrap: wrap;
         padding: 15px;
@@ -328,19 +335,19 @@ header img {
         justify-content: center;
     }
 
-    #section2 .divCardsTools {
+    #sites .divCardsTools {
        margin: 0px 30px;
        padding: 0px 30px;
 
     }
 
-    #section2 .divCardsTools img {
+    #sites .divCardsTools img {
         width: 78px;
      }
 
     /* section 3 */
 
-    #section3 .divCards {
+    #marketing .divCards {
         display: flex;
     }
 }
@@ -456,6 +463,7 @@ header img {
 
   /* animation */
 
+  /* Função para criar o efeito de spray no body */
   .wave {
     position: absolute;
     width: 5px;
@@ -475,11 +483,10 @@ header img {
     }
 }
 
-
-
+/* Função para criar o efeito de onda nas letras */
 /* Estilos básicos para os títulos */
 h1, h2, h3 {
-    display: inline-block;
+    display: block;
     font-size: 2rem;
     position: relative;
     overflow: hidden;
@@ -498,10 +505,24 @@ h1, h2, h3 {
     color: #bde86c; 
 }
 
-
+/* Função para criar o efeito nas imagens e icones*/
 /* Estilos básicos para img e i */
 img, i {
     display: inline-block; /* Garante que transform funcione */
     cursor: pointer;
     transition: transform 0.3s ease-out; /* Transição suave para o efeito */
+}
+
+/* Função para criar o efeito de onda */
+/* Estilo inicial dos elementos cardSeção */
+.cardAnimation {
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(50px); /* Deslocar para baixo */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Transição suave */
+}
+
+/* Estilo final quando o elemento estiver visível */
+.cardAnimation.visible {
+    opacity: 1; /* Tornar visível */
+    transform: translateY(0); /* Voltar à posição original */
 }

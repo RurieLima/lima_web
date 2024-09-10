@@ -50,12 +50,12 @@ function createLetterWaveEffect(element) {
 // Aplicar o efeito a todos os h1, h2 e h3
 document.querySelectorAll('h1, h2, h3').forEach(createLetterWaveEffect);
 
-// Função para criar o efeito de onda
+// Função para criar o efeito nas imagens
 function createWaveEffect(element) {
     element.style.display = 'inline-block';
     element.style.transition = 'transform 5s ease-out';
 
-    // Adicionar um evento para o efeito de onda
+    // Adicionar um evento para o efeito 
     element.addEventListener('mouseover', () => {
         element.style.transform = 'rotateY(1080deg)';
         setTimeout(() => {
@@ -71,7 +71,7 @@ document.querySelectorAll('img, i').forEach(createWaveEffect);
 function animateOnScroll(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            const cards = entry.target.querySelectorAll('.card');
+            const cards = entry.target.querySelectorAll('.cardAnimation');
             cards.forEach((card, index) => {
                 setTimeout(() => {
                     card.classList.add('visible');
@@ -91,3 +91,5 @@ let observer = new IntersectionObserver(animateOnScroll, {
 document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
+
+
