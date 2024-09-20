@@ -27,7 +27,6 @@
         </nav>
     </header>
     <main>
-
         <section id="home" class="section center">            
             <h1>DESENHO DE SITES</h1>
             <h2>MARKETING ONLINE</h2>  
@@ -108,10 +107,8 @@
                     <p>Boostrap</p>
                 </div> 
             </div>
-        </section>
-    
+        </section>    
         <section id="marketing" class="section center">
-
             <div>
                 <h2>MARKETING DIGITAL</h2>
                 <div class="center divCards">
@@ -135,30 +132,37 @@
                 <p>Quer estar presente na internet?</p>
                 <p>Conte com o nosso suporte! Vamos trabalhar juntos neste projeto.</p>
             </div>
-
-        </section>
-    
+        </section>    
         <section id="contato" class="section center">
             <h2>CONTATO</h2>
             <p>Ainda não tem um site ou um plano de marketing online para o seu negócio? Envie uma mensagem através do formulário aqui abaixo!</p>
             <div class="cardAnimation">
-                <form action="">
+                <form id="contactForm" action="form_process.php" method="POST">
                     <label for="userName">Nome:</label>
                     <input type="text" name="name" id="userName" placeholder="Qual seu nome?" class="center">
+                    <span id="nameError" class="error-message"></span>
+
                     <label for="userEmail">Email:</label>
                     <input type="email" name="email" id="userEmail" placeholder="Seu email?" class="center">
+                    <span id="emailError" class="error-message"></span>
+
+                    <label for="userPhone">Telefone:</label>
+                    <input type="text" name="phone" id="userPhone" placeholder="Seu telefone?" class="center">
+                    <span id="phoneError" class="error-message"></span>
+
                     <label for="userMsg">Mensagem:</label>
                     <textarea name="msg" id="userMsg" placeholder="Deixe sua mensagem aqui..." class="center"></textarea>
+                    <span id="msgError" class="error-message"></span>
+                    
+                    <div id="successMessage" class="success-message" style="display: none;">Sua mensagem foi enviada, entraremos em contato em breve!</div>
+
                     <div>
-                        <input type="submit" name="send" id="sendMsg">
+                        <input type="submit" name="send" id="sendMsg" value="Enviar">
                     </div>
                 </form>
-            </div>
-           
-        </section>     
-
-    </main>
-    
+            </div>           
+        </section>   
+    </main>    
     <footer>
         <div class="menuFooter">
             <nav>
@@ -184,8 +188,7 @@
                     </li>                  
                 </ul>
             </nav>
-        </div>
-   
+        </div>   
     </footer>
     <script src="functions.js"></script>
     <script src="https://kit.fontawesome.com/fc5a7a1b6b.js" crossorigin="anonymous"></script>

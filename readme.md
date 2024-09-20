@@ -8,11 +8,11 @@
 
 ### Tools
 
-[![Js](https://img.shields.io/badge/logo-javascript-blue?logo=javascript)](https://developer.mozilla.org/es/docs/Web/JavaScript)
+[![Html](https://img.shields.io/badge/Js-yellow)](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 [![Html](https://img.shields.io/badge/Html-red)](https://developer.mozilla.org/es/docs/Web/CSS)
 
-[![Css](https://img.shields.io/badge/Css-blue)](https://developer.mozilla.org/es/docs/Web/CSS)
+[![Css](https://img.shields.io/badge/Css-blue)](https://developer.mozilla.org/es/docs/Web/HTML)
 
 
 ### Contact
