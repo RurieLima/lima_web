@@ -40,7 +40,7 @@ body, html {
 
 .aHeader {
     position: relative;
-    top: 13px;
+    top: 15px;
     margin: 1px;
     color: #ffffffd0;
     border-radius: 2px;
@@ -58,9 +58,9 @@ header img {
     top: 5px;
 }
 
-/* style section */
+/* Style section */
 .section {
-    padding: 100px 20px; /* Adiciona espaço para que o conteúdo não fique escondido sob o menu fixo */
+    padding: 100px 20px; /* Espaço para não esconder conteudo sob o menu fixo */
     min-height: 100vh;
     background-color: #f4f4f4;
     border-bottom: 1px solid #ddd;
@@ -99,7 +99,7 @@ header img {
     color: #666;
 }
 
-/* section 1 */
+/* Section 1 */
 
 #home p {
     margin: 20px 0px;
@@ -114,24 +114,7 @@ header img {
     width: 300px;
 }
 
-#home button {
-    min-width: 100px;
-    padding: 15px 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 1px 1px black;
-    background-image: linear-gradient(to top, #566a00, #6c8a0a, #83ab19, #98ce28, #acf238);
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-}
-
-#home button:hover {
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* section 2*/
+/* Section 2*/
 
 .card{
     min-height: 200px;
@@ -171,7 +154,7 @@ header img {
     width: 70px;
 }
 
-/* section 3 */
+/* Section 3 */
 
 #marketing h1 {
     font-size: 1.3rem;
@@ -195,7 +178,7 @@ header img {
     box-shadow: none;
 }
 
-/* section 4 */
+/* Section 4 */
 
 #contato form {
     padding: 15px;
@@ -238,7 +221,7 @@ header img {
 .error-message {
     color: rgba(255, 0, 0, 0.909);
     font-size: 0.8em;
-    display: none; /* Ocultar por padrão */
+    display: none; /* Oculto por padrão */
     margin-top: 10px;
 }
 
@@ -250,7 +233,7 @@ header img {
 }
 
 
-/* footer */
+/* Footer */
 
 .menuFooter {
     width: 100%;
@@ -294,7 +277,46 @@ header img {
     margin: 5px;
 }
 
-/* response */
+/* Home tanks */
+
+#home_tanks {
+    padding: 15px;
+}
+
+#home_tanks img {
+    width: 200px;
+}
+
+#home_tanks h1 {
+    padding-top: 25px;
+}
+
+#home_tanks p {
+    margin: 10px 0px;
+}
+
+.home_tanks button {
+
+    min-width: 100px;
+    padding: 15px 20px;
+    margin-top: 30px;
+    color: white;
+    text-shadow: 1px 1px black;
+    background-image: linear-gradient(to top, #566a00, #6c8a0a, #83ab19, #98ce28, #acf238);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.home_tanks h1, h2 {
+    padding: 15px;
+}
+
+.home_tanks figure {
+    padding: 40px;
+}
+
+/* Response */
 @media (min-width: 768px) {
     .menu nav ul li a {
         font-size: 1rem;
@@ -308,7 +330,7 @@ header img {
         font-size: 1rem;
     }
 
-    /* section 1 */
+    /* Section 1 */
 
     #home figure {
         padding: 100px;
@@ -323,7 +345,7 @@ header img {
     }
 
     #home h2 {
-        color: #ffffffa0;
+        color: #ffffff7a;
         text-shadow: 1px 1px 1px rgb(41, 41, 41);
     }
 
@@ -331,11 +353,11 @@ header img {
         width: 300px;
         border-radius: 50%;
         margin-top: -5px;
-        box-shadow: 0 15px 15px -8px rgba(109, 109, 109, 0.507);
-        background-image: linear-gradient(to top, #f9ffee, #f0fcd7, #e7f9bf, #e0f6a6, #d8f28d, #d0ed7c, #c9e96a, #c1e458, #b7dd4a, #acd63c, #a1d02c, #96c917);
+        box-shadow: 0 15px 15px -8px rgba(109, 109, 109, 0.200);
+        background-image: linear-gradient(to bottom, #f6f6f6, #eeeeee, #e6e6e6, #dedede, #d6d6d6);
     }
 
-    /* section 2 */
+    /* Section 2 */
 
     #sites .divCards {
         display: flex;
@@ -360,14 +382,14 @@ header img {
         width: 78px;
      }
 
-    /* section 3 */
+    /* Section 3 */
 
     #marketing .divCards {
         display: flex;
     }
 }
 
-/* fonts */
+/* Fonts */
 .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
@@ -476,9 +498,9 @@ header img {
     font-style: italic;
   }
 
-  /* animation */
+  /* Animação */
 
-  /* Função para criar o efeito de spray no body */
+  /* Função para criar o efeito de spray na home */
   .wave {
     position: absolute;
     width: 5px;
@@ -506,16 +528,16 @@ h1, h2, h3 {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    transition: color 0.3s ease-out; /* Adiciona transição de cor */
+    transition: color 0.3s ease-out; /* transição de cor */
 }
 
-/* Classe que será adicionada dinamicamente para o efeito */
+/* Classe para o efeito */
 .letter-wave {
     display: inline-block;
     transition: transform 0.3s ease-out, color 0.5s ease-out; /* Transição suave para tamanho e cor */
 }
 
-/* Cor de destaque durante a animação */
+/* Cor de destaque */
 .color-change {
     color: #bde86c; 
 }
@@ -523,21 +545,21 @@ h1, h2, h3 {
 /* Função para criar o efeito nas imagens e icones*/
 /* Estilos básicos para img e i */
 img, i {
-    display: inline-block; /* Garante que transform funcione */
+    display: inline-block; 
     cursor: pointer;
-    transition: transform 0.3s ease-out; /* Transição suave para o efeito */
+    transition: transform 0.3s ease-out; /* Transição suave */
 }
 
-/* Função para criar o efeito de onda */
+/* Função para criar o efeito nos cards */
 /* Estilo inicial dos elementos cardSeção */
 .cardAnimation {
-    opacity: 0; /* Inicialmente invisível */
+    opacity: 0; 
     transform: translateY(50px); /* Deslocar para baixo */
     transition: opacity 1s ease-out, transform 1s ease-out; /* Transição suave */
 }
 
-/* Estilo final quando o elemento estiver visível */
+/* Estilo final */
 .cardAnimation.visible {
-    opacity: 1; /* Tornar visível */
-    transform: translateY(0); /* Voltar à posição original */
+    opacity: 1; /* visível */
+    transform: translateY(0); /* voltar posição original */
 }

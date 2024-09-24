@@ -33,11 +33,9 @@
             <figure class="cardAnimation">
                 <img src="img/limaweblogonew.png" alt="logotipo lima web">
             </figure>
-            <button>Informações</button>
             <p>Criamos sites atraentes, seguros e fáceis de gerenciar.</p>
             <p>Te ajudamos a aumentar a visibilidade online do seu negócio com estratégias de marketing digital.</p>
-        </section>
-    
+        </section>    
         <section id="sites" class="section center">
             <h2>SITES E DESENHO WEB</h2>
             <div class="center divCards">
@@ -62,7 +60,6 @@
                     <p>Se você não tem conteúdo para seu site, não se preocupe, nós cuidaremos de tudo para você.</p>
                 </div>         
             </div>
-
             <div class="center divCardsTools">
                 <div class="cardTools">
                     <figure>
@@ -137,25 +134,22 @@
             <h2>CONTATO</h2>
             <p>Ainda não tem um site ou um plano de marketing online para o seu negócio? Envie uma mensagem através do formulário aqui abaixo!</p>
             <div class="cardAnimation">
-                <form id="contactForm" action="form_process.php" method="POST">
+                <form id="contactForm" action="./save_to_file.php" method="POST">
                     <label for="userName">Nome:</label>
                     <input type="text" name="name" id="userName" placeholder="Qual seu nome?" class="center">
                     <span id="nameError" class="error-message"></span>
-
                     <label for="userEmail">Email:</label>
                     <input type="email" name="email" id="userEmail" placeholder="Seu email?" class="center">
                     <span id="emailError" class="error-message"></span>
-
                     <label for="userPhone">Telefone:</label>
                     <input type="text" name="phone" id="userPhone" placeholder="Seu telefone?" class="center">
                     <span id="phoneError" class="error-message"></span>
-
                     <label for="userMsg">Mensagem:</label>
                     <textarea name="msg" id="userMsg" placeholder="Deixe sua mensagem aqui..." class="center"></textarea>
                     <span id="msgError" class="error-message"></span>
-                    
-                    <div id="successMessage" class="success-message" style="display: none;">Sua mensagem foi enviada, entraremos em contato em breve!</div>
-
+                    <div id="successMessage" class="success-message" style="display: none;">
+                        <span>Sua mensagem foi enviada, entraremos em contato em breve!</span>
+                    </div>
                     <div>
                         <input type="submit" name="send" id="sendMsg" value="Enviar">
                     </div>
