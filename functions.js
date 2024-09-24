@@ -92,7 +92,6 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-
 // funcao validaçao do formulario
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     let isValid = true;
@@ -143,8 +142,10 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     } else {
         // Exibir mensagem de sucesso
         document.getElementById('successMessage').style.display = 'block';
+        event.preventDefault();  // Impede o envio do formulário (demonstração)
+        document.getElementById('contactForm').reset();
         
-        // Ocultar a mensagem de sucesso após alguns segundos
+        // Ocultar mensagem após alguns segundos
         setTimeout(() => {
             document.getElementById('successMessage').style.display = 'none';
         }, 3000); // após 3 segundos
